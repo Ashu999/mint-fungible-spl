@@ -26,10 +26,10 @@ import {
   UploadMetadataInput,
 } from '@metaplex-foundation/js';
 import secret from './guideSecret.json';
-
 import tokenData from './tokenData.json';
+import config from './config.json';
 
-const endpoint = 'https://api.devnet.solana.com'; //Replace with your RPC Endpoint
+const endpoint = config.network; //Replace with your RPC Endpoint
 const solanaConnection = new Connection(endpoint);
 
 const MINT_CONFIG = {
